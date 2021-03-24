@@ -39,10 +39,9 @@ public class BaseTest {
         webDriver.findElement(By.className("submit")).click();
 
         WebDriverWait wait = new WebDriverWait(webDriver, 10);
-
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("component-list")));
 
-        String accountButtonText = webDriver.findElement(By.className("account-user")).getText(); //giris yapip yapmadigini bakiyoruz
+        String accountButtonText = webDriver.findElement(By.className("account-user")).getText();
         Assert.assertEquals(accountButtonText, "Hesabım");
 
     }
