@@ -34,8 +34,8 @@ public class BaseTest {
     @Test
     public void login(){
         webDriver.findElement(By.className("account-user")).click();
-        webDriver.findElement(By.id("login-email")).sendKeys("hz.hazret@gmail.com");
-        webDriver.findElement(By.id("login-password-input")).sendKeys("xL3Z7CPAkZBjeqc");
+        webDriver.findElement(By.id("login-email")).sendKeys("tttest31234@gmail.com");
+        webDriver.findElement(By.id("login-password-input")).sendKeys("UU2W!EBNtsNp+-n");
         webDriver.findElement(By.className("submit")).click();
 
         WebDriverWait wait = new WebDriverWait(webDriver, 10);
